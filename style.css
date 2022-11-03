@@ -24,8 +24,9 @@ body {
   margin-top: 20px;
   height: 300px;
   width: 100%;
-  background-image: url('public/Bitmap.png');
+  background-image: url('public/Mask2.png');
   background-size: cover;
+  background-position: 50% 60%;
 }
 
 .content-container {
@@ -33,9 +34,9 @@ body {
   padding: 0 30px;
 }
 
-.red {
+.accent {
+  color: #2f80ed;
   font-weight: 400;
-  color: #e60023;
 }
 
 .content-container > h2 {
@@ -75,14 +76,14 @@ form > button {
 }
 
 #desktop-athlete {
-  background-image: url('public/Mask.png');
+  background-image: url('public/Mask2.png');
   display: none;
 }
 
 @media (min-width: 768px) {
   body {
     display: flex;
-    background-image: url('public/Desktop_img.png');
+    background-image: url('public/Desktop_2.png');
     background-size: cover;
     height: 100vh;
   }
@@ -90,7 +91,7 @@ form > button {
   .container {
     margin: 0;
     margin-left: 20px;
-    max-width: 680px;
+    max-width: 580px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -135,14 +136,24 @@ form > button {
     display: block;
     position: absolute;
     right: 0;
-    width: 50%;
+    width: 30%;
     height: 100%;
     background-size: cover;
-    background-position: left;
+    background-position: center;
   }
 
   form > input,
   form > button {
     height: 80px;
+  }
+}
+
+@media screen and (min-width: 1254px) {
+  .container {
+    max-width: 800px;
+  }
+
+  #desktop-athlete {
+    width: 40%;
   }
 }
