@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'futura-pt', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.adidas-logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#athlete {
+  margin-top: 20px;
+  height: 300px;
+  width: 100%;
+  background-image: url('public/Bitmap.png');
+  background-size: cover;
+}
+
+.content-container {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.red {
+  font-weight: 400;
+  color: #e60023;
+}
+
+.content-container > h2 {
+  font-size: 4rem;
+}
+
+.content-container > p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+form > input,
+form > button {
+  height: 50px;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+form > input {
+  width: 75%;
+  padding-left: 10px;
+  border-radius: 4px 0 0 4px;
+}
+
+form > button {
+  width: 20%;
+  background-color: black;
+  color: #f5f5f5;
+  border-radius: 0 4px 4px 0;
+}
+
+#desktop-athlete {
+  background-image: url('public/Mask.png');
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    background-image: url('public/Desktop_img.png');
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .container {
+    margin: 0;
+    margin-left: 20px;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .adidas-logo {
+    margin: 0;
+    margin-left: 30px;
+    margin-top: 5vh;
+    width: 100px;
+  }
+
+  .content-container {
+    margin-top: 10vh;
+  }
+
+  .content-container > h2 {
+    font-size: 7rem;
+  }
+
+  .content-container > p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  h2,
+  p {
+    text-align: left;
+  }
+
+  form {
+    justify-content: flex-start;
+    margin-top: 10vh;
+  }
+
+  #athlete {
+    display: none;
+  }
+
+  #desktop-athlete {
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); */
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: left;
+  }
+
+  form > input,
+  form > button {
+    height: 80px;
+  }
+}
